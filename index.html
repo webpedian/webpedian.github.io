@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpedia</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.PNG">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js?v=20241225006" defer></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container" id="content">
+        <div class="tab-area">
+            <!-- ラジオボタン（ここはCSSで非表示にする） -->
+            <input type="radio" name="tab-radio" class="tab-radio" id="tab01" checked>
+            <input type="radio" name="tab-radio" class="tab-radio" id="tab02">
+
+            <!-- コンテンツ1: Wikiスタイルのサイトマップ -->
+            <div class="contentwikitop" id="tabContent01">
+                <article class="wiki-article wiki-layout">
+                    <!-- 左メニュー -->
+                    <div class="wiki-menu1">
+                        <!-- HOME -->
+                        <!-- <p style="font-weight: bold; margin-top: 0;">HOME</p>
+                        <p style="margin-left: 1rem;"><a href="/index.html">トップページ</a></p> -->
+
+                        <!-- OS -->
+                        <p style="font-weight: bold; margin-top: 0rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/os.html')">OS</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/os/os2.html#tabContent01')">Windows</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/os/os2.html#tabContent02')">macOS</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/os/os2.html#tabContent03')">iOS</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/os/os2.html#tabContent04')">Android</a></p>
+
+                        <!-- ツール -->
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/tool.html')">ツール</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/tool/tool2.html#tabContent01')">Photoshop</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/tool/tool2.html#tabContent01')">Illustrator</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/tool/tool2.html#tabContent02')">Excel</a></p>
+
+                        <!-- ウェブ言語 -->
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/weblanguage.html')">ウェブ言語</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/weblanguage/weblanguage2.html#tabContent01')">HTML</a>
+                        </p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/weblanguage/weblanguage2.html#tabContent02')">CSS</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/weblanguage/weblanguage2.html#tabContent03')">JavaScript</a>
+                        </p>
+
+                        <!-- オンラインサービス -->
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice.html')">オンラインサービス</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent01')">動画共有サービス</a>
+                        </p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent02')">音楽共有サービス</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent03')">電子書籍サービス</a>
+                        </p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent04')">ECサイト</a>
+                        </p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent05')">クラウド</a>
+                        </p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent06')">AI</a>
+                        </p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent07')">その他</a>
+                        </p>
+
+                        <!-- NEWS -->
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/news.html')">NEWS</a></p>
+
+                        <!-- PEDIAN -->
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/pedian.html')">PEDIAN</a></p>
+
+                        <!-- BBS -->
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/bbs.html')">BBS</a></p>
+
+                        <!-- ABOUT -->
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/about.html')">ABOUT</a></p>
+                                
+
+                                <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/about2.html')">当サイトについて</a>
+                        </p>
+                        <p style="margin-left: 1rem;"><a href="https://brilliant-lolly-785f3e.netlify.app/"
+                                target="_blank">管理人</a></p>
+
+                        <p style="font-weight: bold; margin-top: 0.8rem; border-bottom: 1px solid;"><a href="#"
+                                onclick="loadPart('content', '/lab/lab.html')">Lab</a></p>
+                        <p style="margin-left: 1rem;"><a href="#"
+                                onclick="loadPart('content', '/lab/aidol/aidol.html#tabContent02')">AIdol</a></p>
+                    </div>
+
+
+
+
+
+                    <!-- 本文 -->
+                    <div class="wiki-main">
+                                                <h1 class="wiki-title" id="top">サイトマップ</h1>
+
+                        <!-- 地図イラスト -->
+                        <div style="margin: 0 0 2rem 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350"
+                                style="width: 100%; height: auto; display: block;">
+                                <defs>
+                                    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                        <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+                                        <feOffset dx="1" dy="2" result="offsetblur" />
+                                        <feComponentTransfer>
+                                            <feFuncA type="linear" slope="0.4" />
+                                        </feComponentTransfer>
+                                        <feMerge>
+                                            <feMergeNode />
+                                            <feMergeNode in="SourceGraphic" />
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+
+                                <!-- 背景 -->
+                                <rect width="1200" height="1350" fill="#F0F0F0" />
+
+                                <!-- OS セクション -->
+                                <a href="#" onclick="loadPart('content', '/os.html')">
+                                <rect x="0" y="0" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="35" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">OS</text>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/os/os2.html#tabContent01')">
+                                    <g>
+                                        <rect x="0" y="80" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="147.5" y="115" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🪟 Windows</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/os/os2.html#tabContent02')">
+                                    <g>
+                                        <rect x="305" y="80" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="452.5" y="115" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🍎 macOS</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/os/os2.html#tabContent03')">
+                                    <g>
+                                        <rect x="610" y="80" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="757.5" y="115" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">📱 iOS</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/os/os2.html#tabContent04')">
+                                    <g>
+                                        <rect x="915" y="80" width="285" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="1057.5" y="115" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🤖 Android</text>
+                                    </g>
+                                </a>
+
+                                <!-- ツール セクション -->
+                                <a href="#" onclick="loadPart('content', '/tool.html')">
+                                <rect x="0" y="170" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="205" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">ツール</text>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/tool/tool2.html#tabContent01')">
+                                    <g>
+                                        <rect x="0" y="250" width="395" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="197.5" y="285" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🎨 Photoshop</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/tool/tool2.html#tabContent01')">
+                                    <g>
+                                        <rect x="405" y="250" width="395" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="602.5" y="285" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">✏️ Illustrator</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/tool/tool2.html#tabContent02')">
+                                    <g>
+                                        <rect x="810" y="250" width="390" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="1005" y="285" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">📊 Excel</text>
+                                    </g>
+                                </a>
+
+                                <!-- ウェブ言語 セクション -->
+                                <a href="#" onclick="loadPart('content', '/weblanguage.html')">
+                                <rect x="0" y="340" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="375" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">ウェブ言語</text>
+                                </a>
+
+                                <a href="#"
+                                    onclick="loadPart('content', '/weblanguage/weblanguage2.html#tabContent01')">
+                                    <g>
+                                        <rect x="0" y="420" width="395" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="197.5" y="455" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">📄 HTML</text>
+                                    </g>
+                                </a>
+
+                                <a href="#"
+                                    onclick="loadPart('content', '/weblanguage/weblanguage2.html#tabContent02')">
+                                    <g>
+                                        <rect x="405" y="420" width="395" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="602.5" y="455" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🎨 CSS</text>
+                                    </g>
+                                </a>
+
+                                <a href="#"
+                                    onclick="loadPart('content', '/weblanguage/weblanguage2.html#tabContent03')">
+                                    <g>
+                                        <rect x="810" y="420" width="390" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="1005" y="455" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">⚡ JavaScript</text>
+                                    </g>
+                                </a>
+
+                                <!-- オンラインサービス セクション -->
+                                <a href="#" onclick="loadPart('content', '/onlineservice.html')">
+                                <rect x="0" y="510" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="545" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">オンラインサービス</text>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent01')">
+                                    <g>
+                                        <rect x="0" y="590" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="147.5" y="625" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">📹 動画</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent02')">
+                                    <g>
+                                        <rect x="305" y="590" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="452.5" y="625" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🎵 音楽</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent03')">
+                                    <g>
+                                        <rect x="610" y="590" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="757.5" y="625" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">📚 電子書籍</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent04')">
+                                    <g>
+                                        <rect x="915" y="590" width="285" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="1057.5" y="625" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🛒 ECサイト</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent05')">
+                                    <g>
+                                        <rect x="0" y="670" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="147.5" y="705" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">💾 クラウド</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent06')">
+                                    <g>
+                                        <rect x="305" y="670" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="452.5" y="705" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🤖 AI</text>
+                                    </g>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/onlineservice/onlineservice2.html#tabContent07')">
+                                    <g>
+                                        <rect x="610" y="670" width="295" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="757.5" y="705" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">☁️ その他</text>
+                                    </g>
+                                </a>
+
+                                <!-- NEWS セクション -->
+                                <a href="#" onclick="loadPart('content', '/news.html')">
+                                <rect x="0" y="760" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="795" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">NEWS</text>
+                                </a>
+
+                                <!-- PEDIAN セクション -->
+                                <a href="#" onclick="loadPart('content', '/pedian.html')">
+                                <rect x="0" y="850" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="885" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">PEDIAN</text>
+                                </a>
+
+                                <!-- BBS セクション -->
+                                <a href="#" onclick="loadPart('content', '/bbs.html')">
+                                <rect x="0" y="940" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="975" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">BBS</text>
+                                </a>
+
+                                <!-- ABOUT セクション -->
+                                <a href="#" onclick="loadPart('content', '/about.html')">
+                                <rect x="0" y="1030" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="1065" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">ABOUT</text>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/about2.html')">
+                                    <g>
+                                        <rect x="0" y="1110" width="595" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="297.5" y="1145" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">📖 当サイトについて</text>
+                                    </g>
+                                </a>
+
+                                <a href="https://brilliant-lolly-785f3e.netlify.app/" target="_blank">
+                                    <g>
+                                        <rect x="605" y="1110" width="595" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="902.5" y="1145" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">👤 管理人</text>
+                                    </g>
+                                </a>
+
+
+                                <!-- Lab セクション -->
+                                <a href="#" onclick="loadPart('content', '/lab/lab.html')">
+                                <rect x="0" y="1200" width="1200" height="70" fill="#000" rx="5" />
+                                <text x="600" y="1235" font-family="sans-serif" font-size="45" font-weight="bold"
+                                    fill="#FFF" text-anchor="middle" dominant-baseline="middle">Lab</text>
+                                </a>
+
+                                <a href="#" onclick="loadPart('content', '/lab/aidol/aidol.html#tabContent02')">
+                                    <g>
+                                        <rect x="0" y="1280" width="1200" height="70" fill="#FFF" stroke="#999"
+                                            stroke-width="2" filter="url(#shadow)" rx="5" />
+                                        <text x="600" y="1315" font-family="sans-serif" font-size="45" fill="#000"
+                                            text-anchor="middle" dominant-baseline="middle">🤖 AIdol</text>
+                                    </g>
+                                </a>
+
+                            </svg>
+                        </div>
+
+                        <p class="wiki-lead">
+                            このページでは、当サイトの全ページを体系的に整理したサイトマップを提供しています。
+                            地図の各カテゴリーから目的のページへ簡単にアクセスできます。
+                        </p>
+
+             
+                    </div>
+
+                    <!-- インフォボックス -->
+                    <aside class="wiki-infobox">
+                        <h2>ウェブペディア</h2>
+                        <div class="infobox-image slider-box" data-auto-slide>
+
+                            <button class="slider-btn prev-btn">◀</button>
+
+                            <div class="slider-inner">
+                                <img src="/assets/img/favicon.PNG" class="slide active" alt="webpedia 1">
+                                <img src="/assets/img/lab/lab01.png" class="slide active" alt="lab 1">
+                                <img src="/assets/img/aidol/node/node01.png" class="slide" alt="lab 2">
+                                <div class="slider-caption">
+                                    <h1>Webpedia</h1>
+                                    <p>Born to shine. Ready to slay.</p>
+                                </div>
+                            </div>
+
+                            <button class="slider-btn next-btn">▶</button>
+
+                            <!-- ドットインジケーター -->
+                            <div class="slider-dots"></div>
+
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th>総ページ数</th>
+                                <td>30以上</td>
+                            </tr>
+                            <tr>
+                                <th>メインカテゴリー</th>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <th>更新頻度</th>
+                                <td>随時更新</td>
+                            </tr>
+                            <tr>
+                                <th>最終更新</th>
+                                <td>2025年12月</td>
+                            </tr>
+                        </table>
+
+                        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #a2a9b1;">
+                            <p style="font-size: 0.9rem;">
+                                当サイトは、OS・ツール・ウェブ言語・オンラインサービスなど、デジタル技術に関する情報を幅広く提供しています。
+                            </p>
+                            <p style="font-size: 0.9rem; margin-top: 1rem;">
+                                より詳しい情報は各カテゴリーページをご覧ください。ご不明な点がございましたら、 <a href="#"
+                                    onclick="loadPart('content', '/bbs.html')">
+                                    掲示板</a>でお気軽にお問い合わせください。
+                            </p>
+                        </div>
+                    </aside>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div><!--インクルード部分-->
+    <!------------------------------------------
+このページは live serverでプレビューしてください
+--------------------------------------------->
+
+</body>
+
+</html>
