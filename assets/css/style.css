@@ -6904,42 +6904,6 @@ background: linear-gradient(
     text-decoration: underline;
   }
 
-  /* ====================================
-   画像横並びスタイル（node.html用）
-   ==================================== */
-
-  /* 画像を横並びにするスタイル */
-  .image-gallery {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 20px !important;
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 20px 0 !important;
-  }
-
-  .image-gallery li {
-    flex: 0 0 auto !important;
-  }
-
-  .image-gallery li img {
-    display: block !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  /* モバイル対応 */
-  @media (max-width: 768px) {
-    .image-gallery {
-      flex-direction: column !important;
-      align-items: center !important;
-    }
-
-    .image-gallery li img {
-      width: 100% !important;
-      max-width: 300px !important;
-    }
-  }
 
   /* ヘッダーのz-indexを明示的に設定（wiki-menuより低く） */
   #header {

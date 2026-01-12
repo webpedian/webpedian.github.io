@@ -1,0 +1,72 @@
+/* ====================================
+   画像横並びスタイル(node.html用) - 最優先
+   ==================================== */
+
+/* すべてのデバイスで横並び - 最強の特定性 */
+.wiki-article ul.image-gallery,
+.wiki-layout ul.image-gallery,
+.tab-content-itemwiki ul.image-gallery,
+main.wiki-main ul.image-gallery,
+ul.image-gallery {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 20px 0 !important;
+}
+
+.wiki-article ul.image-gallery li,
+.wiki-layout ul.image-gallery li,
+.tab-content-itemwiki ul.image-gallery li,
+main.wiki-main ul.image-gallery li,
+ul.image-gallery li {
+    flex: 0 0 auto !important;
+    display: inline-block !important;
+}
+
+.wiki-article ul.image-gallery li img,
+.wiki-layout ul.image-gallery li img,
+.tab-content-itemwiki ul.image-gallery li img,
+main.wiki-main ul.image-gallery li img,
+ul.image-gallery li img {
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* モバイルでも横並び（横スクロール可能） */
+@media (max-width: 768px) {
+    .wiki-article ul.image-gallery,
+    .wiki-layout ul.image-gallery,
+    .tab-content-itemwiki ul.image-gallery,
+    main.wiki-main ul.image-gallery,
+    ul.image-gallery {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
+    .wiki-article ul.image-gallery li,
+    .wiki-layout ul.image-gallery li,
+    .tab-content-itemwiki ul.image-gallery li,
+    main.wiki-main ul.image-gallery li,
+    ul.image-gallery li {
+        flex-shrink: 0 !important;
+        display: inline-block !important;
+    }
+
+    .wiki-article ul.image-gallery li img,
+    .wiki-layout ul.image-gallery li img,
+    .tab-content-itemwiki ul.image-gallery li img,
+    main.wiki-main ul.image-gallery li img,
+    ul.image-gallery li img {
+        width: auto !important;
+        min-width: 250px !important;
+        max-width: 300px !important;
+        height: auto !important;
+    }
+}
